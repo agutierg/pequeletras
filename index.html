@@ -1,65 +1,615 @@
-Política de Privacidad — PequeLetras
 
-Última actualización: 22 de julio de 2026
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
+  <title>PequeLetras — Política de Privacidad</title>
+  <meta name="description" content="Política de Privacidad de PequeLetras en español e inglés." />
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&f[]=boska@500,700&display=swap" rel="stylesheet">
+  <style>
+    :root, [data-theme="light"] {
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+      --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
 
-PequeLetras ("la aplicación") es un juego educativo para niños desarrollado por Alejandro Gutiérrez. Nos tomamos muy en serio la privacidad, especialmente la de los menores. Esta política explica qué información se maneja.
+      --space-1: 0.25rem;
+      --space-2: 0.5rem;
+      --space-3: 0.75rem;
+      --space-4: 1rem;
+      --space-5: 1.25rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+      --space-10: 2.5rem;
+      --space-12: 3rem;
+      --space-16: 4rem;
+      --space-20: 5rem;
 
-Información que NO recogemos
+      --color-bg: #f7f6f2;
+      --color-surface: #fbfbf9;
+      --color-surface-2: #f3f0ec;
+      --color-border: #d4d1ca;
+      --color-divider: #dcd9d5;
+      --color-text: #28251d;
+      --color-text-muted: #6e6b63;
+      --color-text-faint: #9b988f;
+      --color-text-inverse: #f9f8f4;
+      --color-primary: #01696f;
+      --color-primary-hover: #0c4e54;
+      --color-primary-soft: #dcebea;
+      --shadow-sm: 0 1px 2px rgba(26, 24, 20, 0.06);
+      --shadow-md: 0 10px 30px rgba(26, 24, 20, 0.08);
+      --radius-sm: 0.5rem;
+      --radius-md: 0.875rem;
+      --radius-lg: 1.25rem;
+      --radius-full: 9999px;
+      --content: 980px;
+      --font-body: 'General Sans', 'Inter', sans-serif;
+      --font-display: 'Boska', 'Georgia', serif;
+    }
 
-La aplicación no solicita ni recopila datos personales. No pedimos correo, teléfono, ubicación ni ningún dato identificativo. El nombre del jugador y su progreso (estrellas, niveles, trofeos) se guardan únicamente en el dispositivo y no se envían a ningún servidor. Se borran al desinstalar la aplicación.
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme]) {
+        --color-bg: #171614;
+        --color-surface: #1c1b19;
+        --color-surface-2: #22211f;
+        --color-border: #393836;
+        --color-divider: #2a2927;
+        --color-text: #ece8df;
+        --color-text-muted: #b4aea1;
+        --color-text-faint: #89847b;
+        --color-text-inverse: #171614;
+        --color-primary: #63a9b1;
+        --color-primary-hover: #87bcc3;
+        --color-primary-soft: #243436;
+        --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+        --shadow-md: 0 12px 36px rgba(0, 0, 0, 0.28);
+      }
+    }
 
-Publicidad
+    [data-theme="dark"] {
+      --color-bg: #171614;
+      --color-surface: #1c1b19;
+      --color-surface-2: #22211f;
+      --color-border: #393836;
+      --color-divider: #2a2927;
+      --color-text: #ece8df;
+      --color-text-muted: #b4aea1;
+      --color-text-faint: #89847b;
+      --color-text-inverse: #171614;
+      --color-primary: #63a9b1;
+      --color-primary-hover: #87bcc3;
+      --color-primary-soft: #243436;
+      --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+      --shadow-md: 0 12px 36px rgba(0, 0, 0, 0.28);
+    }
 
-La aplicación muestra anuncios a través de Google AdMob. Al estar dirigida a niños:
+    *, *::before, *::after { box-sizing: border-box; }
+    html {
+      -webkit-text-size-adjust: none;
+      text-size-adjust: none;
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      line-height: 1.65;
+      color: var(--color-text);
+      background:
+        radial-gradient(circle at top left, color-mix(in srgb, var(--color-primary) 9%, transparent), transparent 28%),
+        linear-gradient(180deg, var(--color-bg), color-mix(in srgb, var(--color-bg) 80%, var(--color-surface) 20%));
+    }
+    img, svg { display: block; max-width: 100%; }
+    a {
+      color: var(--color-primary);
+      text-underline-offset: 0.15em;
+    }
+    a:hover { color: var(--color-primary-hover); }
+    button {
+      font: inherit;
+      border: 0;
+      background: none;
+      color: inherit;
+      cursor: pointer;
+    }
+    :focus-visible {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 3px;
+      border-radius: var(--radius-sm);
+    }
 
-Los anuncios son no personalizados (contenido calificación "para todos", sin segmentación por comportamiento).
-No se transmite el identificador de publicidad (AAID) del dispositivo.
-AdMob puede procesar cierta información técnica (como identificadores del dispositivo) con fines de mostrar anuncios, medir su rendimiento y prevenir el fraude. Consulta la política de Google: https://policies.google.com/privacy
-Sin compras
+    .skip-link {
+      position: absolute;
+      left: var(--space-4);
+      top: -100%;
+      z-index: 50;
+      background: var(--color-primary);
+      color: var(--color-text-inverse);
+      padding: var(--space-3) var(--space-4);
+      border-radius: var(--radius-full);
+      text-decoration: none;
+    }
+    .skip-link:focus { top: var(--space-4); }
 
-La aplicación no incluye compras dentro de la app.
+    .shell {
+      width: min(calc(100% - 2rem), var(--content));
+      margin-inline: auto;
+      padding-block: var(--space-6) var(--space-16);
+    }
 
-Menores
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-4);
+      margin-bottom: var(--space-8);
+      padding: var(--space-3) var(--space-4);
+      background: color-mix(in srgb, var(--color-surface) 88%, transparent);
+      border: 1px solid color-mix(in srgb, var(--color-text) 10%, transparent);
+      border-radius: var(--radius-full);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: var(--space-4);
+      z-index: 20;
+    }
 
-La aplicación está diseñada para el público infantil y cumple las políticas del programa "Diseñado para familias" de Google Play, así como la normativa aplicable de protección de menores (COPPA/RGPD-K). No recopilamos conscientemente datos personales de niños.
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-3);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
 
-Cambios
+    .brand-mark {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 0.9rem;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--color-primary), color-mix(in srgb, var(--color-primary) 45%, white));
+      color: white;
+      box-shadow: var(--shadow-sm);
+      flex: 0 0 auto;
+    }
 
-Podemos actualizar esta política. Publicaremos cualquier cambio en esta misma página.
+    .controls {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
 
-Contacto
+    .pill, .theme-toggle {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-2);
+      min-height: 2.75rem;
+      padding: 0 var(--space-4);
+      border-radius: var(--radius-full);
+      border: 1px solid color-mix(in srgb, var(--color-text) 10%, transparent);
+      background: var(--color-surface);
+      box-shadow: var(--shadow-sm);
+      text-decoration: none;
+    }
 
-Para cualquier duda: tucguti@gmail.com
+    .theme-toggle { width: 2.75rem; padding: 0; }
+    .hero {
+      display: grid;
+      gap: var(--space-8);
+      margin-bottom: var(--space-10);
+    }
 
-Privacy Policy — PequeLetras (English)
+    .hero-card {
+      padding: clamp(var(--space-6), 4vw, var(--space-12));
+      background: linear-gradient(180deg, color-mix(in srgb, var(--color-surface) 92%, white 8%), var(--color-surface));
+      border: 1px solid color-mix(in srgb, var(--color-text) 10%, transparent);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+    }
 
-Last updated: July 22, 2026
+    .hero-card::after {
+      content: "";
+      position: absolute;
+      inset: auto -10% -35% auto;
+      width: 18rem;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: color-mix(in srgb, var(--color-primary) 12%, transparent);
+      filter: blur(14px);
+    }
 
-PequeLetras ("the app") is an educational game for children developed by Alejandro Gutiérrez. We take privacy seriously, especially children's privacy.
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      margin-bottom: var(--space-4);
+      padding: var(--space-2) var(--space-3);
+      border-radius: var(--radius-full);
+      background: var(--color-primary-soft);
+      color: var(--color-primary);
+      font-size: var(--text-sm);
+      font-weight: 600;
+    }
 
-Information we do NOT collect
+    h1, h2, h3 {
+      margin: 0;
+      line-height: 1.12;
+      letter-spacing: -0.03em;
+    }
 
-The app does not request or collect personal data. The player's name and progress (stars, levels, trophies) are stored only on the device and are never sent to any server. They are deleted when the app is uninstalled.
+    h1 {
+      font-family: var(--font-display);
+      font-size: var(--text-2xl);
+      max-width: 11ch;
+      margin-bottom: var(--space-4);
+    }
 
-Advertising
+    .lead {
+      max-width: 62ch;
+      color: var(--color-text-muted);
+      margin-bottom: var(--space-6);
+    }
 
-The app shows ads via Google AdMob. As it is directed to children:
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      color: var(--color-text-muted);
+      font-size: var(--text-sm);
+    }
 
-Ads are non-personalized (G-rated content, no behavioral targeting).
-The device advertising identifier (AAID) is not transmitted.
-AdMob may process some technical information (such as device identifiers) to serve ads, measure performance and prevent fraud. See Google's policy: https://policies.google.com/privacy
-No purchases
+    .meta span {
+      padding: var(--space-2) var(--space-3);
+      border-radius: var(--radius-full);
+      background: color-mix(in srgb, var(--color-surface-2) 88%, transparent);
+      border: 1px solid color-mix(in srgb, var(--color-text) 8%, transparent);
+    }
 
-The app has no in-app purchases.
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: var(--space-4);
+      margin-top: var(--space-8);
+    }
 
-Children
+    .summary-card {
+      padding: var(--space-5);
+      background: color-mix(in srgb, var(--color-surface) 84%, transparent);
+      border: 1px solid color-mix(in srgb, var(--color-text) 9%, transparent);
+      border-radius: var(--radius-md);
+    }
 
-The app is designed for a child audience and complies with Google Play's "Designed for Families" program and applicable child-protection regulations (COPPA/GDPR-K). We do not knowingly collect personal data from children.
+    .summary-card strong {
+      display: block;
+      font-size: var(--text-sm);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--color-text-faint);
+      margin-bottom: var(--space-2);
+    }
 
-Changes
+    .summary-card span {
+      font-size: var(--text-lg);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
 
-We may update this policy; any changes will be posted on this page.
+    .content {
+      display: grid;
+      gap: var(--space-6);
+    }
 
-Contact
+    .lang-section {
+      background: color-mix(in srgb, var(--color-surface) 92%, transparent);
+      border: 1px solid color-mix(in srgb, var(--color-text) 10%, transparent);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+    }
 
-Questions: tucguti@gmail.com
+    .lang-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: var(--space-4);
+      padding: var(--space-5) var(--space-6);
+      background: color-mix(in srgb, var(--color-surface-2) 80%, transparent);
+      border-bottom: 1px solid var(--color-divider);
+    }
+
+    .lang-head h2 {
+      font-size: var(--text-xl);
+      font-family: var(--font-display);
+    }
+
+    .lang-badge {
+      padding: var(--space-2) var(--space-3);
+      border-radius: var(--radius-full);
+      background: var(--color-primary-soft);
+      color: var(--color-primary);
+      font-size: var(--text-sm);
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .section-body {
+      padding: var(--space-6);
+      display: grid;
+      gap: var(--space-6);
+    }
+
+    article {
+      display: grid;
+      gap: var(--space-3);
+      padding-bottom: var(--space-5);
+      border-bottom: 1px solid color-mix(in srgb, var(--color-text) 8%, transparent);
+    }
+
+    article:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    h3 {
+      font-size: var(--text-lg);
+    }
+
+    p { margin: 0; max-width: 72ch; }
+    ul {
+      margin: 0;
+      padding-left: 1.2rem;
+      color: var(--color-text);
+      display: grid;
+      gap: var(--space-2);
+      max-width: 72ch;
+    }
+
+    .callout {
+      padding: var(--space-5);
+      border-radius: var(--radius-md);
+      background: color-mix(in srgb, var(--color-primary) 7%, var(--color-surface));
+      border: 1px solid color-mix(in srgb, var(--color-primary) 18%, transparent);
+    }
+
+    .footer {
+      margin-top: var(--space-10);
+      padding: var(--space-6);
+      border-radius: var(--radius-lg);
+      background: color-mix(in srgb, var(--color-surface) 90%, transparent);
+      border: 1px solid color-mix(in srgb, var(--color-text) 10%, transparent);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: var(--space-4);
+      color: var(--color-text-muted);
+    }
+
+    .footer p { max-width: none; }
+
+    @media (max-width: 720px) {
+      .topbar, .lang-head, .footer {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .controls { justify-content: stretch; }
+      .pill { justify-content: center; }
+      .hero-card { padding: var(--space-6); }
+      .section-body, .lang-head { padding: var(--space-5); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <div class="shell">
+    <header class="topbar" aria-label="Barra superior">
+      <div class="brand" aria-label="PequeLetras">
+        <div class="brand-mark" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 18V6h7a4 4 0 1 1 0 8H6"/>
+            <path d="M13 14h2.5A2.5 2.5 0 0 1 18 16.5 2.5 2.5 0 0 1 15.5 19H6"/>
+          </svg>
+        </div>
+        <span>PequeLetras</span>
+      </div>
+
+      <div class="controls">
+        <a class="pill" href="#es">Español</a>
+        <a class="pill" href="#en">English</a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section class="hero">
+        <div class="hero-card">
+          <div class="eyebrow">Privacidad infantil y transparencia</div>
+          <h1>Política de Privacidad de PequeLetras</h1>
+          <p class="lead">Una página clara, bilingüe y fácil de leer para publicar la política de privacidad de tu app educativa, con un diseño limpio pensado para móvil y escritorio.</p>
+          <div class="meta">
+            <span>Última actualización: 22 de julio de 2026</span>
+            <span>Desarrollador: Alejandro Gutiérrez</span>
+            <span>App educativa para niños</span>
+          </div>
+
+          <div class="summary-grid" aria-label="Resumen rápido">
+            <div class="summary-card">
+              <strong>Datos personales</strong>
+              <span>No se recopilan</span>
+            </div>
+            <div class="summary-card">
+              <strong>Almacenamiento</strong>
+              <span>Solo en el dispositivo</span>
+            </div>
+            <div class="summary-card">
+              <strong>Publicidad</strong>
+              <span>AdMob no personalizada</span>
+            </div>
+            <div class="summary-card">
+              <strong>Compras</strong>
+              <span>Sin compras in-app</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content">
+        <section class="lang-section" id="es" aria-labelledby="titulo-es">
+          <div class="lang-head">
+            <h2 id="titulo-es">Política de Privacidad</h2>
+            <span class="lang-badge">Español</span>
+          </div>
+          <div class="section-body">
+            <article>
+              <h3>Introducción</h3>
+              <p>PequeLetras ("la aplicación") es un juego educativo para niños desarrollado por Alejandro Gutiérrez. Nos tomamos muy en serio la privacidad, especialmente la de los menores. Esta política explica qué información se maneja.</p>
+            </article>
+
+            <article>
+              <h3>Información que no recogemos</h3>
+              <p>La aplicación no solicita ni recopila datos personales. No pedimos correo, teléfono, ubicación ni ningún dato identificativo.</p>
+              <p>El nombre del jugador y su progreso (estrellas, niveles, trofeos) se guardan únicamente en el dispositivo y no se envían a ningún servidor. Se borran al desinstalar la aplicación.</p>
+            </article>
+
+            <article>
+              <h3>Publicidad</h3>
+              <p>La aplicación muestra anuncios a través de Google AdMob. Al estar dirigida a niños:</p>
+              <ul>
+                <li>Los anuncios son no personalizados (contenido calificación “para todos”, sin segmentación por comportamiento).</li>
+                <li>No se transmite el identificador de publicidad (AAID) del dispositivo.</li>
+                <li>AdMob puede procesar cierta información técnica (como identificadores del dispositivo) con fines de mostrar anuncios, medir su rendimiento y prevenir el fraude.</li>
+              </ul>
+              <div class="callout">
+                Consulta la política de Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>
+              </div>
+            </article>
+
+            <article>
+              <h3>Sin compras</h3>
+              <p>La aplicación no incluye compras dentro de la app.</p>
+            </article>
+
+            <article>
+              <h3>Menores</h3>
+              <p>La aplicación está diseñada para el público infantil y cumple las políticas del programa “Diseñado para familias” de Google Play, así como la normativa aplicable de protección de menores (COPPA/RGPD-K). No recopilamos conscientemente datos personales de niños.</p>
+            </article>
+
+            <article>
+              <h3>Cambios</h3>
+              <p>Podemos actualizar esta política. Publicaremos cualquier cambio en esta misma página.</p>
+            </article>
+
+            <article>
+              <h3>Contacto</h3>
+              <p>Para cualquier duda: <a href="mailto:tucguti@gmail.com">tucguti@gmail.com</a></p>
+            </article>
+          </div>
+        </section>
+
+        <section class="lang-section" id="en" aria-labelledby="title-en">
+          <div class="lang-head">
+            <h2 id="title-en">Privacy Policy</h2>
+            <span class="lang-badge">English</span>
+          </div>
+          <div class="section-body">
+            <article>
+              <h3>Introduction</h3>
+              <p>PequeLetras ("the app") is an educational game for children developed by Alejandro Gutiérrez. We take privacy seriously, especially children's privacy.</p>
+            </article>
+
+            <article>
+              <h3>Information we do not collect</h3>
+              <p>The app does not request or collect personal data. The player's name and progress (stars, levels, trophies) are stored only on the device and are never sent to any server. They are deleted when the app is uninstalled.</p>
+            </article>
+
+            <article>
+              <h3>Advertising</h3>
+              <p>The app shows ads via Google AdMob. As it is directed to children:</p>
+              <ul>
+                <li>Ads are non-personalized (G-rated content, no behavioral targeting).</li>
+                <li>The device advertising identifier (AAID) is not transmitted.</li>
+                <li>AdMob may process some technical information (such as device identifiers) to serve ads, measure performance and prevent fraud.</li>
+              </ul>
+              <div class="callout">
+                See Google’s policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>
+              </div>
+            </article>
+
+            <article>
+              <h3>No purchases</h3>
+              <p>The app has no in-app purchases.</p>
+            </article>
+
+            <article>
+              <h3>Children</h3>
+              <p>The app is designed for a child audience and complies with Google Play's “Designed for Families” program and applicable child-protection regulations (COPPA/GDPR-K). We do not knowingly collect personal data from children.</p>
+            </article>
+
+            <article>
+              <h3>Changes</h3>
+              <p>We may update this policy; any changes will be posted on this page.</p>
+            </article>
+
+            <article>
+              <h3>Contact</h3>
+              <p>Questions: <a href="mailto:tucguti@gmail.com">tucguti@gmail.com</a></p>
+            </article>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>PequeLetras · Política de privacidad bilingüe lista para publicar.</p>
+      <p><a href="mailto:tucguti@gmail.com">tucguti@gmail.com</a></p>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      const root = document.documentElement;
+      const button = document.querySelector('[data-theme-toggle]');
+      let theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      root.setAttribute('data-theme', theme);
+
+      const setIcon = () => {
+        button.innerHTML = theme === 'dark'
+          ? '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path></svg>'
+          : '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>';
+        button.setAttribute('aria-label', theme === 'dark' ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro');
+      };
+
+      setIcon();
+      button.addEventListener('click', function () {
+        theme = theme === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', theme);
+        setIcon();
+      });
+    })();
+  </script>
+</body>
+</html>
